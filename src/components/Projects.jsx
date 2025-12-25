@@ -1,12 +1,13 @@
 import projectsData from '../data/projectdata';
 
 
-import ProjectCard from './ProjectCard';
+import ProjectCard from "./ProjectCard.jsx";
 
-const Projects = () => {
+
+function Projects() {
   return (
     <section id="projects" className="min-h-screen bg-gray-800 py-20 px-4">
-      
+
       <div className="max-w-7xl mx-auto">
 
         <div className="text-center mb-16">
@@ -18,7 +19,7 @@ const Projects = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
+
           {projectsData.map((project) => (
             <ProjectCard
               key={project.id}
@@ -27,13 +28,12 @@ const Projects = () => {
               tech={project.tech}
               image={project.image}
               liveLink={project.liveLink}
-              githubLink={project.githubLink}
-            />
+              githubLink={project.githubLink} />
           ))}
         </div>
       </div>
     </section>
   );
-};
+}
 
 export default Projects;
