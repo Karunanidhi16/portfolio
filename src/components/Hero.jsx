@@ -74,7 +74,7 @@ const Hero = () => {
     
         <div className="flex justify-center gap-6">
           <a
-            href="https://github.com/Karunanidhi16"
+            href="https://github.com/Karunanidhisharma16"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition transform hover:scale-110"
