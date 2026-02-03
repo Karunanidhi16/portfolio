@@ -1,8 +1,4 @@
-/**
- * ==========================================================================
- * HERO COMPONENT
- * ==========================================================================
- */
+
 
 import { Github, Linkedin, Mail, Download, Code2 } from "lucide-react";
 
@@ -62,7 +58,7 @@ const Hero = () => {
           </button>
 
           <a
-            href="/resume.pdf"
+            href="src/assets/resume.pdf"
             download
             className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-lg font-semibold transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center gap-2"
           >
@@ -94,7 +90,7 @@ const Hero = () => {
           </a>
 
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:karunanidhisharma89@gmail.com"
             className="text-gray-400 hover:text-red-400 transition transform hover:scale-110"
             aria-label="Email"
           >

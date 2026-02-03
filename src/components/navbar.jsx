@@ -1,34 +1,22 @@
-/**
- * ==========================================================================
- * NAVBAR COMPONENT
- * ==========================================================================
- * 
- * Sticky navigation bar that stays at top while scrolling
- * Shows/hides based on scroll direction
- */
+
 
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
-  // STATE explained:
-  // isOpen = mobile menu open/closed
-  // scrolled = has user scrolled down? (for background change)
+ 
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // EFFECT explained:
-  // useEffect runs code when component loads
-  // Here: listen for scroll events to change navbar style
   useEffect(() => {
     const handleScroll = () => {
-      // If scrolled more than 50px, add background
+      
       setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener('scroll', handleScroll);
     
-    // Cleanup: remove listener when component unmounts
+   
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -56,13 +44,7 @@ const Navbar = () => {
         scrolled ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
       }`}
     >
-      {/* 
-        CONDITIONAL CLASS explained:
-        - If scrolled = true, add dark background + shadow
-        - If scrolled = false, transparent background
-        - ${} inserts JavaScript expression
-      */}
-      
+   
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           

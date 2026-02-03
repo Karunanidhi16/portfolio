@@ -76,7 +76,7 @@ const Contact = () => {
                   href="mailto:24234@iiitu.ac.in"
                   className="text-blue-400 hover:text-blue-300 transition"
                 >
-                  24234@iiitu.ac.in
+                  karunanidhisharma89@gmail.com
                 </a>
               </div>
             </div>
