@@ -58,7 +58,7 @@ const Hero = () => {
           </button>
 
           <a
-            href="src/assets/resume.pdf"
+            href="public/resume.pdf"
             download
             className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-lg font-semibold transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center gap-2"
           >
